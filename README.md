@@ -1,0 +1,2 @@
+# PySpark-dbt-End-to-End-Data-Engineering-Project-Building-an-Uber-Analytics-Platform
+Built an end-to-end Uber Data Engineering Pipeline using Databricks, PySpark, Delta Lake, and dbt. Implemented Medallion Architecture (Bronze, Silver, Gold), Star Schema modeling, SCD Type 2 snapshots, and data quality testing to create scalable, analytics-ready fact and dimension tables for business intelligence and reporting.
