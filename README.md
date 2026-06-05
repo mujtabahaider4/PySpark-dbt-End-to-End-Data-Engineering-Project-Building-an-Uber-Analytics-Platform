@@ -194,49 +194,33 @@ This project demonstrates:
 * Git & GitHub
 
 ---
-databricks-dbt-medallion-pipeline/
-│
-├── 📘 README.md
-│
-├── 🏗️ architecture/
-│ ├── architecture-diagram.png
-│ ├── data-flow.png
-│ └── star-schema.png
-│
-├── 🔷 databricks/
-│ ├── 🥉 bronze/
-│ │ ├── customers_ingestion.py
-│ │ ├── drivers_ingestion.py
-│ │ ├── locations_ingestion.py
-│ │ ├── payments_ingestion.py
-│ │ ├── trips_ingestion.py
-│ │ └── vehicles_ingestion.py
-│ │
-│ └── 🥈 silver/
-│ ├── customers_cleaning.py
-│ ├── drivers_cleaning.py
-│ ├── locations_cleaning.py
-│ ├── payments_cleaning.py
-│ ├── trips_cleaning.py
-│ └── vehicles_cleaning.py
-│
-├── 🎯 dbt_project/
-│ ├── models/
-│ │ ├── 🥈 silver/
-│ │ │ └── trips.sql
-│ │ └── 🥇 gold/
-│ │ ├── dimcustomers.sql
-│ │ ├── dimdrivers.sql
-│ │ ├── dimlocations.sql
-│ │ ├── dimpayments.sql
-│ │ ├── dimvehicles.sql
-│ │ └── facttrips.sql
-│ ├── snapshots/
-│ ├── tests/
-│ ├── macros/
-│ ├── sources/
-│ └── dbt_project.yml
+## 📐 Architecture
+
+### System Architecture
+![Architecture Diagram](architecture/architecture-diagram.png)
+
+### Data Flow
+![Data Flow](architecture/data-flow.png)
+
+### Star Schema
+![Star Schema](architecture/star-schema.png)
+
+## 📸 Implementation Screenshots
+
+| Bronze Layer | Silver Layer | Gold Layer |
+|--------------|---------------|-------------|
+| ![Bronze](screenshots/bronze-layer.png) | ![Silver](screenshots/silver-layer.png) | ![Gold](screenshots/gold-layer.png) |
+
+| dbt DAG | Test Results |
+|----------|---------------|
+| ![DAG](screenshots/dbt-dag.png) | ![Tests](screenshots/dbt-test-results.png) |
 ## 🛠️ Tech Stack
+
+
+
+## 🔄 CI/CD Pipeline
+
+[![dbt CI/CD](https://github.com/yourusername/databricks-dbt-medallion-pipeline/actions/workflows/dbt-ci.yml/badge.svg)](https://github.com/yourusername/databricks-dbt-medallion-pipeline/actions/workflows/dbt-ci.yml)
 
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
