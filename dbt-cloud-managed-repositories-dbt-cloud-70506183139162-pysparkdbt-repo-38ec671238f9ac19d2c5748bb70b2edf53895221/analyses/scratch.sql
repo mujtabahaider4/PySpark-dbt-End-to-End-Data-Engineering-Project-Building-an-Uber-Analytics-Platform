@@ -1,0 +1,1 @@
+select * From {{source('source_bronze','trips')}}
