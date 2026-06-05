@@ -194,26 +194,7 @@ This project demonstrates:
 * Git & GitHub
 
 ---
-## 📐 Architecture
 
-### System Architecture
-![Architecture Diagram](architecture/architecture-diagram.png)
-
-### Data Flow
-![Data Flow](architecture/data-flow.png)
-
-### Star Schema
-![Star Schema](architecture/star-schema.png)
-
-## 📸 Implementation Screenshots
-
-| Bronze Layer | Silver Layer | Gold Layer |
-|--------------|---------------|-------------|
-| ![Bronze](screenshots/bronze-layer.png) | ![Silver](screenshots/silver-layer.png) | ![Gold](screenshots/gold-layer.png) |
-
-| dbt DAG | Test Results |
-|----------|---------------|
-| ![DAG](screenshots/dbt-dag.png) | ![Tests](screenshots/dbt-test-results.png) |
 ## 🛠️ Tech Stack
 
 
